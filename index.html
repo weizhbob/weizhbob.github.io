@@ -65,6 +65,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-NDK" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/05/22/NDK/" class="article-date">
+  <time datetime="2015-05-22T09:22:04.000Z" itemprop="datePublished">2015-05-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/22/NDK/">NDK</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="NDK安装以及环境配置">NDK安装以及环境配置</h1><p>1、下载Android NDK压缩包，下载地址：[<a href="http://developer.android.com/tools/sdk/ndk/index.html]。" target="_blank" rel="external">http://developer.android.com/tools/sdk/ndk/index.html]。</a></p>
+<p>2、解压，将Android NDK压缩包解压到主目录/home/×××/下。<br> tar jxvf android-ndk-r9d-linux-x86.tar.bz2<br>解压后目录结构为：/home/×××/android-ndk-r9d</p>
+<p>3、配置PATH路径：</p>
+<p>命令行执行<br> sudo gedit /etc/profile<br>在文件末尾加入如下内容：</p>
+<h1 id="set_NDK_env">set NDK env</h1><p> export NDK_HOME=/home/snowdream/android-ndk-r9d<br> export PATH=$NDK_HOME:$PATH<br>或者加入：<br> export NDK_HOME=/home/skywang/workspace/ndk/r9b/android-ndk-r9b<br> export PATH=$PATH:$NDK_HOME<br>保存文件后退出，在终端提示符中输入”source /etc/profile”使环境变量生效</p>
+<p>4、编译sample工程：</p>
+<p>执行命令<br> cd /home/snowdream/android-ndk-r5/samples/hello-jni<br>进入示例项目根目录，然后执行如下命令：<br> ndk-build<br>您将看到系统会编译出libhello-jni.so，NDK配置成功</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://weizhbob.github.io/2015/05/22/NDK/" data-id="ci9zejq610000syggroglhdyu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-visualstdio" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/05/21/visualstdio/" class="article-date">
@@ -98,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://weizhbob.github.io/2015/05/21/visualstdio/" data-id="ci9y6gezs0001v2gga7ygvfyp" class="article-share-link">Share</a>
+      <a data-url="http://weizhbob.github.io/2015/05/21/visualstdio/" data-id="ci9zejq6b0001syggtq7giv01" class="article-share-link">Share</a>
       
       
     </footer>
@@ -123,7 +166,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -133,6 +176,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/05/22/NDK/">NDK</a>
+          </li>
         
           <li>
             <a href="/2015/05/21/visualstdio/">visualstdio</a>
